@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Supergym</title>
+  <link rel="preload" href="fonts/bebasneue-regular-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/robotocondensed-regular-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/robotocondensed-bold-webfont.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div style="display: none;">
+  <include src="build/img/icon/sprite_auto.svg"></include>
+  </div>
+  <header class="page-header">
+    <h1 class="visually-hidden">Фитнесс центр Supergym</h1>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" aria-label="Логотип Supergym">
+        <img src="img/icon/logo-supergym-desktop.svg" width="89" height="20" alt="Логотип Supergym">
+      </a>
+    </div>
+    <section class="page-header__about about">
+      <div class="about__wrap">
+        <p>Омск</p>
+        <h2>Фитнес центр</h2>
+        <div class="about__place">
+          <p>Тренажёрный зал</p>
+          <p>Групповые занятия</p>
+          <p>Кардио-зона</p>
+      </div>
+      <a class="about__button btn btn--place" href="#membership">Купить абонемент</a>
+      </div>
+      <div class="about__banner">
+        <a class="btn  btn--banner" href="#subscription">Купить абонемент</a>
+      </div>
+    </section>
+  </header>
 </body>
 </html>

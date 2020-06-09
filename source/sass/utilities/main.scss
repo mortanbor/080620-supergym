@@ -1,0 +1,21 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  @include total-font;
+  color: $grey;
+  text-align: center;
+}
+
+img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}

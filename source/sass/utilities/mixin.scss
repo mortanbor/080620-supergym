@@ -1,0 +1,20 @@
+@mixin title-font {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+@mixin total-font {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+@mixin default-style {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

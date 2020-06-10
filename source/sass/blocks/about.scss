@@ -1,0 +1,44 @@
+.about__wrap {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 32.9%;
+  margin-top: 122px;
+  margin-right: 65px;
+}
+
+.about__wrap span {
+  @include default-style;
+  @include bebasfont;
+
+  font-size: 49px;
+  line-height: 49px;
+  text-transform: uppercase;
+
+  color: $white;
+}
+
+.about__wrap p {
+  @include default-style;
+}
+
+.about__img {
+  margin-bottom: 51px;
+}
+
+.about__place {
+  position: absolute;
+
+  top: 190px;
+  left: 19px;
+}
+
+.about__place p {
+  @include default-style;
+
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}

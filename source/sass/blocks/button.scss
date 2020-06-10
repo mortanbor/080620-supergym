@@ -1,0 +1,21 @@
+.button {
+  @include default-style;
+  display: block;
+  box-sizing: border-box;
+  min-width: 206px;
+  padding: 24px 57px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: $white;
+
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid $white;
+  border-radius: 5px;
+}

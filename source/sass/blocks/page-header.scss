@@ -1,0 +1,42 @@
+.page-header {
+  position: relative;
+  background-color: red;
+  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 30px;
+}
+
+.page-header__logo img {
+  width: 89px;
+  height: 20px;
+}
+
+.page-header__phone {
+  @include default-style;
+  @include bebasfont;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+
+  color: $white;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.page-header__about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

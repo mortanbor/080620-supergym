@@ -11,17 +11,23 @@
 
 .about__wrap span {
   @include default-style;
-  @include bebasfont;
+  @include headtitle-desktop;
 
-  font-size: 49px;
-  line-height: 49px;
-  text-transform: uppercase;
+  margin-bottom: 25px;
 
   color: $white;
 }
 
-.about__wrap p {
+.about__wrap h2 {
   @include default-style;
+  @include headtitle-desktop;
+  margin-bottom: 60px;
+
+  font-size: 109px;
+  line-height: 109px;
+  text-align: right;
+
+  color: $white;
 }
 
 .about__img {
@@ -31,14 +37,58 @@
 .about__place {
   position: absolute;
 
-  top: 190px;
-  left: 19px;
+  top: 200px;
+  right: 66.8%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .about__place p {
   @include default-style;
 
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 150%;
+
+
+  font-size: 14px;
+  line-height: 150%;
+
+  text-align: right;
+
+  white-space: nowrap;
+}
+
+.about__social {
+  @include default-style;
+
+  margin-top: auto;
+  margin-bottom: 96px;
+  margin-left: auto;
+}
+
+.about__item {
+  @include default-style;
+  margin-bottom: 15px;
+
+    &:last-child {
+    margin-bottom: 0;
+  }
+
+  line-height: 14px;
+}
+
+.about__item a {
+  @include default-style;
+
+  font-family: $font-roboto;
+  font-size: 12px;
+  line-height: 14px;
   text-transform: uppercase;
+
+  color: $white;
 }

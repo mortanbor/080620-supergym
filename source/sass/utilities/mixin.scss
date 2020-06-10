@@ -1,10 +1,27 @@
-@mixin bebasfont {
-  font-family: "Bebas Neue", "Arial", sans-serif;
-}
-
 @mixin default-style {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+@mixin headtitle-desktop {
+  font-family: $font-bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: $darkblue;
+
+  text-transform: uppercase;
+}
+
+@mixin headtitle-tablet {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+@mixin headtitle-mobile {
+  font-size: 32px;
+  line-height: 32px;
 }

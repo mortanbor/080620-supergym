@@ -9,6 +9,14 @@
 @font-face {
   font-family: "Roboto Condensed";
   font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/robotocondensed-light-webfont.woff2") format("woff2"),
+    url("../fonts/robotocondensed-light-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
   font-weight: 400;
   src: url("../fonts/robotocondensed-regular-webfont.woff2") format("woff2"),
     url("../fonts/robotocondensed-regular-webfont.woff") format("woff");

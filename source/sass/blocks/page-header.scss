@@ -13,11 +13,21 @@
   align-items: center;
 
   padding-top: 30px;
+
+    @media (max-width: $tablet-width) {
+      padding-top: 40px;
+      margin-bottom: 30px;
+    }
 }
 
 .page-header__logo img {
   width: 89px;
   height: 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 82px;
+    height: 17px;
+  }
 }
 
 .page-header__phone {
@@ -34,10 +44,20 @@
   &:focus {
     cursor: pointer;
   }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .page-header__about {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @media (max-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }

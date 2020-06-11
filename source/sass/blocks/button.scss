@@ -19,14 +19,14 @@
 }
 
 .button--member {
-  padding: 24px 56px;
+  padding: 20px 56px;
   border: 4px solid $white;
 
   @media (max-width: $tablet-width) {
-    padding: 22px 31px;
+    padding: 21px 30px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 20px 82px;
+    padding: 22px 82px;
   }
 }

@@ -4,8 +4,8 @@
   padding-left: 45px;
   margin: auto;
 
-    @media (max-width: $mobile-width) {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+  @media (max-width: $mobile-width) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }

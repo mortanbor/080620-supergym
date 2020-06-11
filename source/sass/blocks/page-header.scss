@@ -11,18 +11,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 84.8%;
 
-  padding-top: 30px;
+  padding-top: 29px;
 
-    @media (max-width: $tablet-width) {
-      padding-top: 40px;
-      margin-bottom: 25px;
-    }
+  @media (max-width: $tablet-width) {
+    width: 88.2%;
 
-    @media (max-width: $mobile-width) {
-      padding-top: 20px;
-      margin-bottom: 80px;
-    }
+    padding-top: 38px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    padding-top: 19px;
+    margin-bottom: 74px;
+  }
 }
 
 .page-header__logo img {
@@ -71,4 +75,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 84.8%;
+
+  @media (max-width: $tablet-width) {
+    width: 88.2%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+  }
 }

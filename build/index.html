@@ -26,17 +26,23 @@
     </div>
     <section class="container page-header__about about">
       <div class="about__wrap">
-        <p>Омск</p>
+        <span>Омск</span>
         <h2>Фитнес<br>центр</h2>
+        <div class="about__place">
+          <p>Тренажёрный зал</p>
+          <p>Групповые занятия</p>
+          <p>Кардио-зона</p>
+        </div>
         <a class="button button--member" href="#membership">Купить абонемент</a>
       </div>
-      <div class="about__place">
-        <p>Тренажёрный зал</p>
-        <p>Групповые занятия</p>
-        <p>Кардио-зона</p>
-      </div>
       <div class="about__img">
-        <img src="img/photo/photo-athlete-desktop@1x.jpg" width="500" height="556" alt="Изображен спортивный мужчина">
+        <picture>
+          <!-- 1х: 324px 390px; 2x: 648px 780px -->
+          <source media="(max-width: 1199px)" srcset="img/photo/photo-athlete-tablet@1x.jpg, img/photo/photo-athlete-tablet@2x.jpg 2x">
+
+          <!-- 1х: 500px 556px; 2x: 1000px 1112px -->
+          <img src="img/photo/photo-athlete-desktop@1x.jpg" srcset="img/photo/photo-athlete-desktop@2x.jpg 2x" width="500" height="556" alt="Изображен спортивный мужчина">
+        </picture>
       </div>
       <ul class="about__social">
         <li class="about__item">

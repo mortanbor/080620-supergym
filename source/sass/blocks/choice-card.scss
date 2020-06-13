@@ -1,0 +1,127 @@
+.choice-card__list {
+  @include default-style;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  max-width: 1160px;
+
+  // @media (max-width: $tablet-width) {
+  //   align-items: center;
+  //   width: auto;
+  //
+  //   padding: 0 12.32%;
+  //   margin: 0;
+  // }
+  //
+  // @media (max-width: $mobile-width) {
+  //   align-items: flex-start;
+  //
+  //   padding: 0;
+  // }
+}
+
+.choice-card__item {
+  position: relative;
+  z-index: 2;
+
+  @include default-style;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 360px;
+
+  margin-right: 40px;
+  padding-top: 65px;
+  padding-right: 77px;
+  padding-bottom: 68px;
+  padding-left: 77px;
+
+  background-color: $white;
+
+  border: 7px solid transparent;
+  text-align: center;
+  transition: all 0.5s;
+  tabindex: 1;
+
+  &:hover,
+  &:focus {
+    border-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+    border-image-slice: 1;
+    outline: none;
+  }
+}
+
+.choice-card__item h3 {
+  @include default-style;
+  margin-bottom: 22px;
+
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  text-align: center;
+
+  color: $darkblue;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.choice-card__time {
+  @include default-style;
+  margin-bottom: 59px;
+
+  font-family: $font-roboto;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+
+  color: #495a7d;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 81px;
+  }
+}
+
+.choice-card__shadow {
+  margin-bottom: 69px;
+
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 150%;
+  text-align: center;
+
+  color: #e8e8e8;
+
+  opacity: 0.48;
+
+}
+
+.choice-card__prise {
+  position: absolute;
+  @include default-style;
+
+  left: 50%;
+  top: 45%;
+  z-index: 5;
+  transform: translateX(-50%);
+
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 150%;
+  text-align: center;
+
+  color: #103aae;
+}
+
+.choice-card__code {
+  color: $darkblue;
+}

@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <!-- Pixel Glass -->
-  <style>
+  <!-- <style>
     HTML {
       background-repeat: no-repeat;
       background-position:  50% 0;
@@ -35,7 +35,7 @@
     }
   </style>
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
+  <script src="../node_modules/pixel-glass/script.js"></script> -->
   <!-- // Pixel Glass -->
 </head>
 <body>
@@ -69,7 +69,7 @@
           <p>Групповые занятия</p>
           <p>Кардио-зона</p>
         </div>
-        <a class="button button--member" href="#membership">Купить абонемент</a>
+        <a class="button button--buy" href="#buycard">Купить абонемент</a>
       </div>
       <div class="about__img">
         <picture>
@@ -122,6 +122,54 @@
         <img src="img/photo/photo-videogym-desktop@1x.jpg" width="364" height="228" srcset="img/photo/photo-videogym-desktop@2x 2x" alt="Видео тренажерного зала">
       </picture>
     </div>
+      </div>
+  </section>
+
+  <section class="card-block">
+      <div class="container card-block__tickets">
+        <h2>Абонементы</h2>
+        <ul class="card-block__list">
+            <li class="card-block__item">
+                <a href="#">1 месяц</a>
+            </li>
+            <li class="card-block__item">
+                <a href="#">6 месяцев</a>
+            </li>
+            <li class="card-block__item">
+                <a href="#">12 месяцев</a>
+            </li>
+        </ul>
+        <div class="card-block__wrapper choice-card">
+          <ul class="choice-card__list">
+            <li class="choice-card__item">
+              <h3>С тренером</h3>
+              <p class="choice-card__time">12 занятий</p>
+              <span class="choice-card__shadow">5000</span>
+              <p class="choice-card__prise">5000
+                  <span class="choice-card__code">&#x20bd;</span>
+              </p>
+              <a class="button button--card" name="buycard" href="buy.html">Купить абонемент</a>
+            </li>
+            <li class="choice-card__item" tabindex="1">
+              <h3>Дневной</h3>
+              <p class="choice-card__time">с 8:00 до 17:00</p>
+              <span class="choice-card__shadow">1700</span>
+              <p class="choice-card__prise">1700
+                  <span class="choice-card__code">&#x20bd;</span>
+              </p>
+              <a class="button button--card" name="buycard" href="buy.html">Купить абонемент</a>
+            </li>
+            <li class="choice-card__item">
+              <h3>Полный день</h3>
+              <p class="choice-card__time">с 8:00 до 22:00</p>
+              <span class="choice-card__shadow">2700</span>
+              <p class="choice-card__prise">2700
+                  <span class="choice-card__code">&#x20bd;</span>
+              </p>
+              <a class="button button--card" name="buycard" href="buy.html">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
       </div>
   </section>
 </body>

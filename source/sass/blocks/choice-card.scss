@@ -8,19 +8,20 @@
 
   max-width: 1160px;
 
-  // @media (max-width: $tablet-width) {
-  //   align-items: center;
-  //   width: auto;
-  //
-  //   padding: 0 12.32%;
-  //   margin: 0;
-  // }
-  //
-  // @media (max-width: $mobile-width) {
-  //   align-items: flex-start;
-  //
-  //   padding: 0;
-  // }
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+
+    align-items: center;
+    width: auto;
+
+    padding: 0 12.32%;
+    margin: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    align-items: flex-start;
+    padding: 0;
+  }
 }
 
 .choice-card__item {
@@ -36,29 +37,41 @@
   width: 360px;
 
   margin-right: 40px;
-  padding-top: 65px;
+  padding-top: 58px;
   padding-right: 77px;
-  padding-bottom: 68px;
+  padding-bottom: 58px;
   padding-left: 77px;
 
   background-color: $white;
 
   border: 7px solid transparent;
   text-align: center;
-  transition: all 0.5s;
-  tabindex: 1;
 
-  &:hover,
-  &:focus {
-    border-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
-    border-image-slice: 1;
-    outline: none;
+  @media (max-width: $tablet-width) {
+    width: 442px;
+
+    margin-right: 0;
+    margin-bottom: 40px;
+    padding-top: 55px;
+    padding-right: 118px;
+    padding-bottom: 60px;
+    padding-left: 118px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+    padding-left: 45px;
   }
 }
 
 .choice-card__item h3 {
   @include default-style;
-  margin-bottom: 22px;
+  margin-bottom: 11px;
 
   font-family: $font-roboto;
   font-weight: bold;
@@ -69,13 +82,15 @@
   color: $darkblue;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 110.16%;
   }
 }
 
 .choice-card__time {
   @include default-style;
-  margin-bottom: 59px;
+  margin-bottom: 10px;
 
   font-family: $font-roboto;
   font-size: 16px;
@@ -85,12 +100,12 @@
   color: #495a7d;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 81px;
+    margin-bottom: 10px;
   }
 }
 
 .choice-card__shadow {
-  margin-bottom: 69px;
+  margin-bottom: 28px;
 
   font-family: $font-roboto;
   font-weight: bold;
@@ -102,14 +117,19 @@
 
   opacity: 0.48;
 
+  @media (max-width: $mobile-width) {
+    margin-bottom: 25px;
+    font-size: 80px;
+  }
 }
 
 .choice-card__prise {
   position: absolute;
+
   @include default-style;
 
   left: 50%;
-  top: 45%;
+  top: 43%;
   z-index: 5;
   transform: translateX(-50%);
 
@@ -120,6 +140,12 @@
   text-align: center;
 
   color: #103aae;
+
+  @media (max-width: $mobile-width) {
+    top: 42%;
+
+    font-size: 47px;
+  }
 }
 
 .choice-card__code {

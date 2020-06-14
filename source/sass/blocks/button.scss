@@ -92,3 +92,15 @@
     }
   }
 }
+
+.button--games-block {
+  padding: 27px 110px 24px 111px;
+
+  @media (max-width: $tablet-width) {
+    width: 202px;
+    padding: 13px 49px 11px 49px;
+
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

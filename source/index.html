@@ -120,7 +120,7 @@
         <h2>Абонементы</h2>
         <ul class="card-block__list">
             <li class="card-block__item">
-                <a href="#">1 месяц</a>
+                <a href="#"  name="buycard">1 месяц</a>
             </li>
             <li class="card-block__item">
                 <a href="#">6 месяцев</a>
@@ -138,7 +138,7 @@
               <p class="choice-card__prise">5000
                   <span class="choice-card__code">&#x20bd;</span>
               </p>
-              <a class="button button--card" name="buycard" href="buy.html">Купить абонемент</a>
+              <a class="button button--card" href="buy.html">Купить абонемент</a>
             </li>
             <li class="choice-card__item">
               <h3>Дневной</h3>
@@ -147,7 +147,7 @@
               <p class="choice-card__prise">1700
                   <span class="choice-card__code">&#x20bd;</span>
               </p>
-              <a class="button button--card" name="buycard" href="buy.html">Купить абонемент</a>
+              <a class="button button--card" href="buy.html">Купить абонемент</a>
             </li>
             <li class="choice-card__item">
               <h3>Полный день</h3>
@@ -156,11 +156,48 @@
               <p class="choice-card__prise">2700
                   <span class="choice-card__code">&#x20bd;</span>
               </p>
-              <a class="button button--card" name="buycard" href="buy.html">Купить абонемент</a>
+              <a class="button button--card" href="buy.html">Купить абонемент</a>
             </li>
           </ul>
         </div>
       </div>
+  </section>
+
+  <section class="games-block">
+    <div class="container  games-block__wrapper">
+      <div class="games-block__info">
+        <div class="games-block__about">
+          <h2>Super Games</h2>
+          <div class="games-block__period">
+            <div class="games-block__date-wrapper">
+              <p class="games-block__date">Дата</p>
+              <div class="games-block__start">
+                <span class="games-block__number">7</span>
+                <span class="games-block__month">Марта <br> 2019</span>
+            </div>
+            </div>
+            <div class="games-block__time-wrapper">
+              <p class="games-block__date games-block__date--time">Время</p>
+              <span class="games-block__hour">12:00</span>
+            </div>
+          </div>
+        </div>
+        <p class="games-block__year">Ежегодные соревнования по CrossFit</p>
+        <a class="button button--games-block" href="#">Заполнить заявку</a>
+      </div>
+      <div class="games-block__img">
+        <picture>
+          <!-- 1х: 290px 292px; 2x: 580px 584px -->
+          <source media="(max-width: 767px)" srcset="img/photo/photo-hitman-mobile@1x.jpg, img/photo/photo-hitman-mobile@2x.jpg 2x">
+
+          <!-- 1х: 386px 292px; 2x: 772px 585px -->
+          <source media="(max-width: 1199px)" srcset="img/photo/photo-hitman-tablet@1x.jpg, img/photo/photo-hitman-tablet@2x.jpg 2x">
+
+          <!-- 1х: 660px 500px; 2x: 1320px 1000px -->
+          <img src="img/photo/photo-hitman-desktop@1x.jpg" width="660" height="500" srcset="img/photo/photo-hitman-desktop@2x.jpg 2x" alt="Фото мужчины-спортсмена">
+        </picture>
+      </div>
+    </div>
   </section>
 </body>
 </html>

@@ -1,0 +1,179 @@
+.action-block {
+  background-color: $white;
+}
+
+.action-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+
+  max-width: 0;
+  width: 1160px;
+
+  padding-top: 122px;
+  padding-bottom: 120px;
+}
+
+.action-block__wrapper h2 {
+  @include default-style;
+  @include headtitle-desktop;
+
+  margin-bottom: 52px;
+  text-align: center;
+}
+
+.action-block__content {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+}
+
+.action-block__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: calc(50% - 20px);
+
+  margin-right: 40px;
+
+  color: $white;
+}
+
+.action-block__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 50%;
+  max-width: auto;
+
+  padding-top: 33px;
+  padding-left: 45px;
+
+  background-color: $red;
+}
+
+.action-block__info-unit {
+  @include default-style;
+
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 136%;
+
+  text-align: left;
+}
+
+.action-block__info-number {
+  @include default-style;
+
+  margin-bottom: 14px;
+
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 110%;
+
+  text-align: left;
+}
+
+.action-block__info-limit {
+  @include default-style;
+
+  padding-right: 34px;
+
+  font-size: 18px;
+  line-height: 140%;
+
+  text-align: left;
+}
+
+.action-block__img  img{
+  max-width: 280px;
+}
+
+.action-block__more {
+  @include default-style;
+
+  margin-top: auto;
+  margin-bottom: 45px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $white;
+  border-bottom: 1px solid $white;
+}
+
+.action-block__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+
+  width: calc(50% - 20px);
+
+}
+
+.action-block__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+
+  max-width: 560px;
+  min-height: 210px;
+
+  padding: 19px 35px 27px 28px;
+
+  border: 7px solid transparent;
+
+  border-image: linear-gradient(130deg, #ed0233 0%, #063db4 45%);
+  border-image-slice: 1;
+}
+
+.action-block__item h3 {
+  @include default-style;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 156%;
+
+  text-align: left;
+}
+
+.action-block__item p {
+  @include default-style;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+
+  text-align: left;
+}
+
+.action-block__details {
+  @include default-style;
+
+  margin-top: auto;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: $darkblue;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  text-align: left;
+
+  border-bottom: 1px solid $darkblue;
+
+}

@@ -1,0 +1,16 @@
+.social {
+  @include default-style;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 110px;
+}
+
+.social__item {
+  @include default-style;
+
+  margin-right: 25px;
+}

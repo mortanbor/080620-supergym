@@ -3,20 +3,76 @@
 }
 
 .trainer-block__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   max-width: 1160px;
   padding-top: 0;
   padding-bottom: 120px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 70px;
+  }
+}
+
+.trainer-block__wrapper h2 {
+  @include default-style;
+  @include headtitle-desktop;
+
+  padding-bottom: 50px;
+
+  text-align: left;
+
+  @media (max-width: $tablet-width) {
+    @include headtitle-tablet;
+
+    padding-bottom: 43px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    @include headtitle-mobile;
+
+    padding-bottom: 42px;
+  }
+}
+
+.trainer-block__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin: auto;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.trainer-block__list {
+  position: relative;
+
+  @include default-style;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
 
   &::before {
     content: "";
     position: absolute;
 
     top: 45%;
-    left: -10px;
+    left: -3%;
 
     display: block;
 
@@ -39,7 +95,7 @@
     position: absolute;
 
     top: 45%;
-    right: -10px;
+    right: -3%;
 
     display: block;
 
@@ -52,23 +108,46 @@
     transform: rotate(-45deg);
     transform: matrix(-0.55, -0.52, -0.52, 0.55, 0, 0);
   }
-}
 
-.trainer-block__wrapper h2 {
-  @include default-style;
-  @include headtitle-desktop;
+  @media (max-width: $tablet-width) {
+    justify-content: center;
 
-  padding-bottom: 50px;
+    width: 83.48%;
 
-  text-align: left;
-}
+    &::before {
+      top: 45%;
+      left: -55px;
+    }
 
-.trainer-block__list {
-  @include default-style;
+    &::after {
+      top: 45%;
+      right: -55px;
+    }
+  }
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @media (max-width: $mobile-width) {
+    min-width: 226px;
+    width: 77.93%;
+
+    margin: 0 auto;
+
+    &::before {
+      top: 47%;
+      left: -30px;
+
+      width: 16px;
+      height: 16px;
+    }
+
+    &::after {
+      top: 47%;
+      right: -30px;
+
+      width: 16px;
+      height: 16px;
+    }
+
+  }
 }
 
 .trainer-block__item h3 {
@@ -90,6 +169,10 @@
   white-space: nowrap;
 
   text-align: center;
+
+  @media (max-width: $mobile-width) {
+    top: 220px;
+  }
 }
 
 .trainer-block__item {
@@ -113,6 +196,30 @@
       opacity: 0.89;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    width: calc(50% - 15px);
+
+    &:hover,
+    &:focus {
+      h3 {
+        top: 50px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 226px;
+    min-height: 274px;
+    margin-right: 0;
+
+    &:hover,
+    &:focus {
+      h3 {
+        top: 42px;
+      }
+    }
+  }
 }
 
 .trainer-block__cover {
@@ -130,8 +237,18 @@
 
   background-color: $darkblue;
 
-
   opacity: 0;
+
+
+  @media (max-width: $tablet-width) {
+    padding-top: 75px;
+    padding-bottom: 58px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 65px;
+    padding-bottom: 48px;
+  }
 }
 
 .trainer-block__cover p{
@@ -146,12 +263,20 @@
   color: #b6bdcc;
 
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .trainer-block__cover-list {
   @include default-style;
 
   padding-left: 55px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 35px;
+  }
 }
 
 .trainer-block__cover-item {
@@ -186,5 +311,45 @@
     height: 6px;
     border-radius: 50%;
     background-color: $white;
+  }
+}
+
+.trainer-block__item--block {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.trainer-block__item--mob {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.trainer-block__img {
+  display: block;
+
+  @media (max-width: $tablet-width) {
+    width: 268px;
+    height: 294px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+
+.trainer-block__img img{
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
   }
 }

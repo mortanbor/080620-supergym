@@ -12,16 +12,30 @@
 
   padding-top: 40px;
   padding-bottom: 39px;
+
+  @media (max-width: $tablet-width) {
+    max-width: none;
+    width: 768px;
+  }
 }
 
 .page-footer__logo {
   margin-right: 276px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 62px;
+  }
 }
 
 .page-footer__logo img {
   max-width: 89px;
   width: 89px;
   height: 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 82px;
+    height: 18px;
+  }
 }
 
 .page-footer__list {
@@ -34,6 +48,12 @@
   width: 430px;
 
   margin-right: 254px;
+
+  @media (max-width: $tablet-width) {
+    width: 392px;
+
+    margin-right: 43px;
+  }
 }
 
 .page-footer__item {
@@ -43,6 +63,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 30px;
   }
 }
 

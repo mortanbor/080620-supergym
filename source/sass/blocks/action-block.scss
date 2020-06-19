@@ -25,7 +25,7 @@
 
   @media (max-width: $mobile-width) {
     padding-top: 65px;
-    padding-bottom: 65px;
+    padding-bottom: 40px;
   }
 }
 
@@ -90,7 +90,7 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  width: 50%;
+  width: 42%;
   max-width: auto;
 
   padding-top: 33px;
@@ -161,7 +161,8 @@
 }
 
 .action-block__img {
-  max-width: 280px;
+  width: 280px;
+  height: 462px;
 
   @media (max-width: $tablet-width) {
     max-width: none;

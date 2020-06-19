@@ -108,4 +108,14 @@
   .button--form {
     width: 100%;
     padding: 20px 166px 17px;
+
+    @media (max-width: $mobile-width) {
+      display: block;
+
+      max-width: 290px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 17px;
+      padding-bottom: 16px;
+   }
 }

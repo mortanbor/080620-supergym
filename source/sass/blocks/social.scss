@@ -12,6 +12,11 @@
     max-width: none;
     width: 98px;
   }
+
+  @media (max-width: $mobile-width) {
+    min-width: 145px;
+    margin: 0;
+  }
 }
 
 .social__item {
@@ -21,5 +26,36 @@
 
   @media (max-width: $tablet-width) {
     margin-right: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 35px;
+  }
+}
+
+.social__link--vk {
+  @media (max-width: $mobile-width) {
+    display: block;
+
+    width: 32px;
+    height: 17px;
+  }
+}
+
+.social__link--insta {
+  @media (max-width: $mobile-width) {
+    display: block;
+
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.social__link--fb {
+  @media (max-width: $mobile-width) {
+    display: block;
+
+    width: 14px;
+    height: 27px;
   }
 }

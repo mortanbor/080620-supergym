@@ -33,7 +33,7 @@
       background-image: url( "img/Desktop.png" );
       }
     }
-  </style>
+ </style>
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
   <script src="../node_modules/pixel-glass/script.js"></script>
   <!-- // Pixel Glass -->
@@ -63,9 +63,6 @@
       </div>
       <div class="about__img">
         <picture>
-          <!-- 1х: 324px 390px; 2x: 648px 780px -->
-          <source media="(max-width: 1199px)" srcset="img/photo/photo-athlete-tablet@1x.jpg, img/photo/photo-athlete-tablet@2x.jpg 2x">
-
           <!-- 1х: 500px 556px; 2x: 1000px 1112px -->
           <img src="img/photo/photo-athlete-desktop@1x.jpg" srcset="img/photo/photo-athlete-desktop@2x.jpg 2x" alt="Изображен спортивный мужчина">
         </picture>
@@ -98,30 +95,24 @@
           <source media="(max-width: 1199px)" srcset="img/photo/photo-gym-tablet@1x.jpg, img/photo/photo-gym-tablet@2x.jpg 2x">
 
           <!-- 1х: 660px 401px; 2x: 1320px 802px -->
-          <img src="img/photo/photo-gym-desktop@1x.jpg" width="660" height="401" srcset="img/photo/photo-gym-desktop@2x 2x" alt="Фото тренажерного зала">
+          <img src="img/photo/photo-gym-desktop@1x.jpg" srcset="img/photo/photo-gym-desktop@2x 2x" alt="Фото тренажерного зала">
           </picture>
         </div>
         <div class="gym-block__video">
       <picture>
-        <!-- 1х: 320px 167px; 2x: 640px 334px -->
-        <source media="(max-width: 767px)" srcset="img/photo/photo-videogym-mobile@1x.jpg, img/photo/photo-videogym-mobile@2x.jpg 2x">
-
-        <!-- 1х: 266px 167px; 2x: 532px 334px -->
-        <source media="(max-width: 1199px)" srcset="img/photo/photo-videogym-tablet@1x.jpg, img/photo/photo-videogym-tablet@2x.jpg 2x">
-
         <!-- 1х: 364px 228px; 2x: 728px 456px -->
-        <img src="img/photo/photo-videogym-desktop@1x.jpg" width="364" height="228" srcset="img/photo/photo-videogym-desktop@2x 2x" alt="Видео тренажерного зала">
+        <img src="img/photo/photo-videogym-desktop@1x.jpg" srcset="img/photo/photo-videogym-desktop@2x 2x" alt="Видео тренажерного зала">
       </picture>
     </div>
       </div>
   </section>
 
-  <section class="card-block">
+  <section class="card-block" id="buycard">
       <div class="container card-block__tickets">
         <h2>Абонементы</h2>
         <ul class="card-block__list">
             <li class="card-block__item">
-                <a href="#"  name="buycard">1 месяц</a>
+                <a href="#">1 месяц</a>
             </li>
             <li class="card-block__item">
                 <a href="#">6 месяцев</a>
@@ -411,11 +402,11 @@
             <div class="contacts-block__column">
               <div class="contacts-block__item">
               <h3>Телефон:</h3>
-              <a class="contact-block__phone" href="#">8-800-555-55-55</a>
+              <a class="contacts-block__phone" href="#">8-800-555-55-55</a>
             </div>
               <div class="contacts-block__item contacts-block__item--bottom">
               <h3>Email:</h3>
-              <a class="contact-block__email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              <a class="contacts-block__email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
             </div>
           </div>
         </div>
@@ -426,10 +417,12 @@
 
   <footer class="page-footer">
     <div class="container page-footer__wrapper">
-      <a class="page-footer__logo" aria-label="Логотип Supergym">
-          <img src="img/icon/logo-supergym-desktop.svg" alt="Логотип Supergym">
-      </a>
       <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__logo" aria-label="Логотип Supergym">
+            <img src="img/icon/logo-supergym-desktop.svg" alt="Логотип Supergym">
+          </a>
+        </li>
         <li class="page-footer__item">
           <a href="#">Услуги</a>
         </li>
@@ -448,26 +441,26 @@
       </ul>
       <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Мы ВКонтакте">
+            <a class="social__link social__link--vk" href="#" aria-label="Мы ВКонтакте">
               <svg width="23" height="14" viewbox="0 0 23 14">
               <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Мы в инстаграм">
+            <a class="social__link social__link--insta" href="#" aria-label="Мы в инстаграм">
               <svg width="24" height="24" viewbox="0 0 24 24">
               <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Мы в Фейсбук">
+            <a class="social__link social__link--fb" href="#" aria-label="Мы в Фейсбук">
               <svg width="12" height="24" viewbox="0 0 12 24">
               <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
-          </li>.
+          </li>
         </ul>
     </div>
   </footer>

@@ -16,22 +16,19 @@
   @media (max-width: $tablet-width) {
     max-width: none;
     max-width: 768px;
+
+    padding-top: 45px;
   }
 
   @media (max-width: $mobile-width) {
-    display: block;
+    flex-direction: column;
     max-width: auto;
     min-height: 320px;
 
     margin: 0;
-  }
-}
+    padding-top: 50px;
 
-.page-footer__logo {
-  margin-right: 276px;
-
-  @media (max-width: $tablet-width) {
-    margin-right: 62px;
+    padding-bottom: 0;
   }
 }
 
@@ -44,6 +41,11 @@
     width: 82px;
     height: 18px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 68px;
+    height: 15px;
+  }
 }
 
 .page-footer__list {
@@ -53,14 +55,21 @@
   flex-direction: row;
   justify-content: flex-start;
 
-  width: 430px;
-
   margin-right: 254px;
 
   @media (max-width: $tablet-width) {
-    min-width: 392px;
-
     margin-right: 43px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 290px;
+    width: auto;
+    height: 110px;
+    margin: 0;
+    margin-bottom: 25px;
   }
 }
 
@@ -69,12 +78,30 @@
 
   margin-right: 40px;
 
+  &:first-child {
+    margin-right: 276px;
+  }
+
   &:last-child {
     margin-right: 0;
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 20px;
+    margin-right: 31px;
+
+    &:first-child {
+      margin-right: 60px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+
+    margin-bottom: 10px;
+
+    &:first-child {
+      margin-top: 2px;
+    }
+    text-align: left;
   }
 }
 
@@ -87,4 +114,9 @@
   line-height: 16px;
 
   color: $white;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

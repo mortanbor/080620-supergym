@@ -48,22 +48,6 @@
 
   border: 2px solid $darkblue;
 
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    top: -7px;
-    right: 0;
-    left: -7px;
-    bottom: 0;
-
-    width: 346px;
-    height: 100%;
-
-    border: 7px solid transparent;
-  }
-
-
   &:hover,
   &:focus {
     background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -71,27 +55,13 @@
     border: none;
     color: $white;
     outline: none;
-
-    &::before {
-      border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
-      border-image-slice: 1;
-    }
+  }
 
     @media (max-width: $tablet-width) {
-      padding: 27px 44px;
-
-      &::before {
-        width: 428px;
-      }
-    }
-
-    @media (max-width: $mobile-width) {
-      &::before {
-        width: 276px;
-      }
+      padding: 27px 42px;
     }
   }
-}
+
 
 .button--games-block {
   padding: 27px 110px 24px 111px;

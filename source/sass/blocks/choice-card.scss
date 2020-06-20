@@ -42,10 +42,37 @@
   padding-bottom: 58px;
   padding-left: 77px;
 
+  transition: all 0.3s;
+
+
   background-color: $white;
 
   border: 7px solid transparent;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: -7px;
+    right: 0;
+    left: -7px;
+    bottom: 0;
+
+    width: 346px;
+    height: 100%;
+
+    border: 7px solid transparent;
+  }
+
+  &:hover,
+  &:focus {
+    border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image-slice: 1;
+    // border: none;
+    // color: $white;
+    outline: none;
+  }
 
   @media (max-width: $tablet-width) {
     width: 442px;
@@ -56,6 +83,10 @@
     padding-right: 118px;
     padding-bottom: 60px;
     padding-left: 118px;
+
+    &::before {
+      width: 428px;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -66,6 +97,10 @@
     padding-right: 45px;
     padding-bottom: 45px;
     padding-left: 45px;
+
+    &::before {
+      width: 276px;
+    }
   }
 }
 

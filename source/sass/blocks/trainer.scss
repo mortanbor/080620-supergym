@@ -41,21 +41,6 @@
   }
 }
 
-.trainer-block__info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  width: 100%;
-
-  margin: auto;
-
-  @media (max-width: $tablet-width) {
-    justify-content: center;
-    width: 100%;
-  }
-}
-
 .trainer-block__list {
   position: relative;
 
@@ -66,6 +51,8 @@
   justify-content: space-between;
 
   width: 100%;
+
+  margin: auto;
 
   &::before {
     content: "";
@@ -81,7 +68,6 @@
 
     border: solid #afafaf;
     border-width: 0 1px 1px 0;
-
 
     border-bottom: 1px solid #afafaf;
     border-right: 1px solid #afafaf;
@@ -146,7 +132,6 @@
       width: 16px;
       height: 16px;
     }
-
   }
 }
 
@@ -346,7 +331,7 @@
 }
 
 
-.trainer-block__img img{
+.trainer-block__img img {
   @media (max-width: $tablet-width) {
     width: 100%;
     height: 100%;

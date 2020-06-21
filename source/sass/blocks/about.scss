@@ -124,6 +124,16 @@
   }
 }
 
+.about__img img {
+  width: 500px;
+  height: 556px;
+
+  @media (max-width: $tablet-width) {
+    width: 324px;
+    height: 390px;
+  }
+}
+
 .about__social {
   @include default-style;
 

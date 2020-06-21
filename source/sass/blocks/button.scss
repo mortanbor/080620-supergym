@@ -56,11 +56,7 @@
     color: $white;
     outline: none;
   }
-
-    @media (max-width: $tablet-width) {
-      padding: 27px 42px;
-    }
-  }
+}
 
 
 .button--games-block {
@@ -75,17 +71,17 @@
   }
 }
 
-  .button--form {
-    width: 100%;
-    padding: 20px 166px 17px;
+.button--form {
+  width: 100%;
+  padding: 20px 166px 17px;
 
-    @media (max-width: $mobile-width) {
-      display: block;
+  @media (max-width: $mobile-width) {
+    display: block;
 
-      max-width: 290px;
-      padding-left: 25px;
-      padding-right: 25px;
-      padding-top: 17px;
-      padding-bottom: 16px;
-   }
+    max-width: 290px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
 }

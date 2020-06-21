@@ -35,7 +35,7 @@
   }
 }
 
-.advantage-block__wrapper h2{
+.advantage-block__wrapper h2 {
   @include default-style;
   @include headtitle-desktop;
 
@@ -171,14 +171,15 @@
   @media (max-width: $tablet-width) {
     margin-right: 30px;
   }
+
   @media (max-width: $mobile-width) {
     text-align: center;
     margin-right: 0;
     margin-bottom: 10px;
-    }
   }
+}
 
-.advantage-block__number{
+.advantage-block__number {
   @include default-style;
 
   font-weight: bold;
@@ -206,7 +207,6 @@
   @media (max-width: $mobile-width) {
     text-align: center;
   }
-
 }
 
 .advantage-block__about {
@@ -309,7 +309,6 @@
     padding: 0;
     padding-top: 30px;
     padding-bottom: 45px;
-
   }
 }
 
@@ -333,7 +332,6 @@
   @media (max-width: $mobile-width) {
     text-align: center;
     line-height: 85px;
-
   }
 }
 
@@ -354,7 +352,6 @@
 
     margin-bottom: 10px;
   }
-
 }
 
 .advantage-block__center p {
@@ -370,5 +367,4 @@
     padding-left: 50px;
     padding-right: 50px;
   }
-
 }

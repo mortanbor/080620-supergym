@@ -2,17 +2,18 @@
 
 // Slider trainer
 var sliderTrainer = new Swiper('.swiper-container', {
+  loop: true,
   slidesPerView: 1,
   slidesPerGroup: 1,
   navigation: {
-    nextEl: '.swiper-button-prev',
-    prevEl: '.swiper-button-next'
+    nextEl: '.trainer-button-next',
+    prevEl: '.trainer-button-prev'
   },
   breakpoints: {
-    768: {
+    767: {
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 20
+      spaceBetween: 30
     },
     1199: {
       slidesPerView: 4,

@@ -1,57 +1,54 @@
-.swiper-container {
-  position: relative;
-
-  width: 1160px;
-  height: auto;
-}
-
-.swiper-slide {
-  width: 260px;
-  min-height: 294px;
-  height: 100%;
-
-  margin-right: 40px;
-}
-
-.swiper-button-prev {
-  @include default-style;
-
-  position: absolute;
-
-  top: 45%;
-  left: -3%;
-
-  display: block;
-
-  width: 30px;
-  height: 30px;
-
-  border: solid #afafaf;
-  border-width: 0 1px 1px 0;
-
-  border-bottom: 1px solid #afafaf;
-  border-right: 1px solid #afafaf;
-
-  transform: rotate(-45deg);
-  transform: matrix(-0.55, -0.52, -0.52, 0.55, 0, 0);
-}
-
+.swiper-button-prev,
 .swiper-button-next {
   @include default-style;
 
+  width: 16px;
+  height: 32px;
+
+  opacity: 0;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0;
+    outline: none;
+  }
+}
+
+.trainer-button-prev {
+  @include default-style;
+
   position: absolute;
 
-  top: 45%;
-  right: -3%;
+  width: 16px;
+  height: 32px;
 
-  display: block;
+  background-image: url("../img/icon/icon-left.svg");
+  background: center no-repeat;
+  background-size: contain;
 
-  width: 30px;
-  height: 30px;
-
-  border-top: 1px solid #afafaf;
-  border-left: 1px solid #afafaf;
-
-  transform: rotate(-45deg);
-  transform: matrix(-0.55, -0.52, -0.52, 0.55, 0, 0);
 }
+
+.trainer-button-next {
+  right: 10px;
+  background-image: url("../img/icon/icon-right.svg");
+}
+
+
+
+// .trainer-button-next {
+//   @include default-style;
+//
+//   position: absolute;
+//
+//   width: 16px;
+//   height: 32px;
+//
+//   background-image: url("../img/icon/icon-right.svg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: contain;
+// }

@@ -135,6 +135,29 @@
   }
 }
 
+// .trainer-button-prev {
+//   @include default-style;
+//
+//   position: absolute;
+//
+//   top: 45%;
+//   left: -3%;
+//
+//   display: block;
+//
+//   width: 30px;
+//   height: 30px;
+//
+//   border: solid #afafaf;
+//   border-width: 0 1px 1px 0;
+//
+//   border-bottom: 1px solid #afafaf;
+//   border-right: 1px solid #afafaf;
+//
+//   transform: rotate(-45deg);
+//   transform: matrix(-0.55, -0.52, -0.52, 0.55, 0, 0);
+// }
+
 .trainer-block__item h3 {
   @include default-style;
 

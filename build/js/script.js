@@ -1,22 +1,7 @@
 'use strict';
 
-// var pageHeader = document.querySelector('.page-header');
-// var headerToggle = document.querySelector('.page-header__toggle');
-//
-// pageHeader.classList.remove('page-header--nojs');
-//
-// headerToggle.addEventListener('click', function () {
-//   if (pageHeader.classList.contains('page-header--closed')) {
-//     pageHeader.classList.remove('page-header--closed');
-//     pageHeader.classList.add('page-header--opened');
-//   } else {
-//     pageHeader.classList.add('page-header--closed');
-//     pageHeader.classList.remove('page-header--opened');
-//   }
-// });
-
 // Slider trainer
-// var sliderTrainer = new Swiper('.slider--trainer', {
+var sliderTrainer = new Swiper('.swiper-container', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   navigation: {
@@ -29,29 +14,7 @@
       slidesPerGroup: 2,
       spaceBetween: 20
     },
-    1100: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-      spaceBetween: 40
-    }
-  }
-});
-
-// Slider trainer
-var mySwiper = new Swiper ('.swiper-container', {
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      spaceBetween: 20
-    },
-    1100: {
+    1199: {
       slidesPerView: 4,
       slidesPerGroup: 4,
       spaceBetween: 40

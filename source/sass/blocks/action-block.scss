@@ -98,7 +98,7 @@
   background-color: $red;
 
   @media (max-width: $tablet-width) {
-    width: 41.15%;
+    box-sizing: border-box;
   }
 
   @media (max-width: $mobile-width) {
@@ -250,6 +250,11 @@
 
   @media (max-width: $tablet-width) {
     width: calc(50% - 15px);
+
+    &:first-child {
+      padding-right: 55px;
+    }
+
   }
 
   @media (max-width: $mobile-width) {

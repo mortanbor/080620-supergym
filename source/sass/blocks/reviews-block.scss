@@ -3,6 +3,8 @@
 }
 
 .reviews-block__wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,6 +49,10 @@
   flex-direction: row;
   justify-content: flex-start;
 
+  box-sizing: border-box;
+
+  min-height: 242px;
+
   padding-top: 55px;
   padding-right: 60px;
   padding-bottom: 60px;
@@ -54,51 +60,11 @@
 
   background-color: $darkblue;
 
-  &::before {
-    content: "";
-    position: absolute;
-
-    top: 44%;
-    left: -52px;
-
-    display: block;
-
-    width: 30px;
-    height: 30px;
-
-    border: solid #afafaf;
-    border-width: 0 1px 1px 0;
-
-
-    border-bottom: 1px solid #afafaf;
-    border-right: 1px solid #afafaf;
-
-    transform: rotate(-45deg);
-    transform: matrix(-0.55, -0.52, -0.52, 0.55, 0, 0);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-
-    top: 44%;
-    right: -52px;
-
-    display: block;
-
-    width: 30px;
-    height: 30px;
-
-    border-top: 1px solid #afafaf;
-    border-left: 1px solid #afafaf;
-
-    transform: rotate(-45deg);
-    transform: matrix(-0.55, -0.52, -0.52, 0.55, 0, 0);
-  }
-
   @media (max-width: $mobile-width) {
-    // display: block;
-    max-width: 226px;
+    display: block;
+
+    width: 226px;
+    min-height: 336px;
 
     margin-left: 33px;
     margin-right: 33px;
@@ -106,22 +72,6 @@
     padding-right: 26px;
     padding-bottom: 33px;
     padding-left: 26px;
-
-    &::before {
-      top: 47%;
-      left: -32px;
-
-      width: 20px;
-      height: 20px;
-    }
-
-    &::after {
-      top: 47%;
-      right: -32px;
-
-      width: 20px;
-      height: 20px;
-    }
   }
 }
 

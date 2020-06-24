@@ -323,22 +323,6 @@
   }
 }
 
-.trainer-block__item--block {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-}
-
-.trainer-block__item--mob {
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-}
-
 .trainer-block__img {
   display: block;
 

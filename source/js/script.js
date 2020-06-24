@@ -1,7 +1,7 @@
 'use strict';
 
 // Slider trainer
-var sliderTrainer = new Swiper('.swiper-container', {
+var sliderTrainer = new Swiper('.slider--trainer', {
   loop: true,
   slidesPerView: 1,
   slidesPerGroup: 1,
@@ -20,5 +20,16 @@ var sliderTrainer = new Swiper('.swiper-container', {
       slidesPerGroup: 4,
       spaceBetween: 40
     }
+  }
+});
+
+// Slider review
+var sliderReview = new Swiper('.slider--reviews', {
+  loop: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  navigation: {
+    nextEl: '.reviews-button-next',
+    prevEl: '.reviews-button-prev'
   }
 });

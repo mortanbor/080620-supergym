@@ -16,6 +16,12 @@
 
   background-color: transparent;
   border: 2px solid $white;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 }
 
 .button--buy {

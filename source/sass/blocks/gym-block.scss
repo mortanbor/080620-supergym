@@ -1,6 +1,4 @@
 .gym-block__description {
-  position: relative;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -62,10 +60,12 @@
   @include default-style;
   @include headtitle-desktop;
 
+  min-width: 323px;
+
   margin-bottom: 8px;
   text-align: left;
 
-  white-space: nowrap;
+  // white-space: nowrap;
 
   @media (max-width: $tablet-width) {
     @include headtitle-tablet;
@@ -84,7 +84,7 @@
 
 .gym-block__room h3 {
   @include default-style;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 
   font-family: $font-roboto;
   font-size: 18px;
@@ -140,6 +140,10 @@
   }
 }
 
+.gym-block__wrap {
+  position: relative;
+}
+
 .gym-block__img img {
   width: auto;
 
@@ -157,53 +161,80 @@
   }
 }
 
-.gym-block__video {
+.gym-block__player {
   position: absolute;
+
   display: block;
 
   top: 54%;
   left: 38.6%;
 
   width: 364px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.gym-block__video {
+  position: absolute;
+  display: block;
 
-    width: 100px;
-    height: 100px;
+  width: 364px;
+  height: 228px;
 
-    background-image: url("../img/icon/video-button.svg");
-    background-color: transparent;
-    background-repeat: no-repeat;
-  }
+  top: 71px;
+  left: -87%;
 
   @media (max-width: $tablet-width) {
     top: 69%;
     left: 33%;
 
     width: 266px;
-
-    &::before {
-      width: 73px;
-      height: 73px;
-
-      background-size: 73px;
-    }
   }
 
   @media (max-width: $mobile-width) {
-    position: absolute;
-
     top: 83%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     width: auto;
     height: 167px;
+  }
+}
+
+.gym-block__btnvideo {
+  @include default-style;
+
+  position: absolute;
+  z-index: 4;
+
+  top: 135px;
+  left: -185px;
+
+  width: 100px;
+  height: 100px;
+
+  background-color: transparent;
+  background-image: url("../img/icon/video-button.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  border: none;
+
+  opacity: 1;
+  outline: none;
+
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 73px;
+    height: 73px;
   }
 }

@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <!-- Pixel Glass -->
-  <!-- <style>
+  <style>
     HTML {
       background-repeat: no-repeat;
       background-position:  50% 0;
@@ -35,7 +35,7 @@
     }
  </style>
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script> -->
+  <script src="../node_modules/pixel-glass/script.js"></script>
   <!-- // Pixel Glass -->
 </head>
 <body>
@@ -86,12 +86,13 @@
 
   <section class="gym-block">
     <div class="container gym-block__description">
-        <div class="gym-block__room">
+      <div class="gym-block__room">
         <h2>Тренажерный зал</h2>
         <h3>Просторный зал площадью 900 кв/м</h3>
         <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов. </p>
         <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-        </div>
+      </div>
+      <div class="gym-block__wrap">
         <div class="gym-block__img">
           <picture>
             <source type="image/webp" srcset="img/photo/photo-gym-desktop@1x.webp, img/photo/photo-gym-desktop@2x.webp 2x">
@@ -100,29 +101,33 @@
 
             <source type="image/webp" media="(max-width: 767px)" srcset="img/photo/photo-gym-mobile@1x.webp, img/photo/photo-gym-mobile@2x.webp 2x">
 
-          <!-- 1х: 320px 313px; 2x: 640px 626px -->
-          <source media="(max-width: 767px)" srcset="img/photo/photo-gym-mobile@1x.jpg, img/photo/photo-gym-mobile@2x.jpg 2x">
+            <!-- 1х: 320px 313px; 2x: 640px 626px -->
+            <source media="(max-width: 767px)" srcset="img/photo/photo-gym-mobile@1x.jpg, img/photo/photo-gym-mobile@2x.jpg 2x">
 
-          <!-- 1х: 678px 345px; 2x: 1356px 690px -->
-          <source media="(max-width: 1199px)" srcset="img/photo/photo-gym-tablet@1x.jpg, img/photo/photo-gym-tablet@2x.jpg 2x">
+            <!-- 1х: 678px 345px; 2x: 1356px 690px -->
+            <source media="(max-width: 1199px)" srcset="img/photo/photo-gym-tablet@1x.jpg, img/photo/photo-gym-tablet@2x.jpg 2x">
 
-          <!-- 1х: 660px 401px; 2x: 1320px 802px -->
-          <img src="img/photo/photo-gym-desktop@1x.jpg" srcset="img/photo/photo-gym-desktop@2x 2x" alt="Фото тренажерного зала">
+            <!-- 1х: 660px 401px; 2x: 1320px 802px -->
+            <img src="img/photo/photo-gym-desktop@1x.jpg" srcset="img/photo/photo-gym-desktop@2x.jpg 2x" alt="Фото тренажерного зала">
           </picture>
         </div>
-        <div class="gym-block__video">
-      <picture>
-        <source type="image/webp" srcset="img/photo/photo-videogym-desktop@1x.webp, img/photo/photo-videogym-desktop@2x.webp 2x">
+        <div class="gym-block__player">
+          <div class="gym-block__video">
+            <picture>
+              <source type="image/webp" srcset="img/photo/photo-videogym-desktop@1x.webp, img/photo/photo-videogym-desktop@2x.webp 2x">
 
-        <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo/photo-videogym-tablet@1x.webp, img/photo/photo-videogym-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo/photo-videogym-tablet@1x.webp, img/photo/photo-videogym-tablet@2x.webp 2x">
 
-        <source type="image/webp" media="(max-width: 767px)" srcset="img/photo/photo-videogym-mobile@1x.webp, img/photo/photo-videogym-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/photo/photo-videogym-mobile@1x.webp, img/photo/photo-videogym-mobile@2x.webp 2x">
 
-        <!-- 1х: 364px 228px; 2x: 728px 456px -->
-        <img src="img/photo/photo-videogym-desktop@1x.jpg" srcset="img/photo/photo-videogym-desktop@2x.jpg 2x" alt="Видео тренажерного зала">
-      </picture>
-    </div>
+              <!-- 1х: 364px 228px; 2x: 728px 456px -->
+              <img src="img/photo/photo-videogym-desktop@1x.jpg" srcset="img/photo/photo-videogym-desktop@2x.jpg 2x" alt="Видео тренажерного зала">
+            </picture>
+          </div>
+          <button class="gym-block__btnvideo" type="button"></button>
+        </div>
       </div>
+    </div>
   </section>
 
   <section class="card-block" id="buycard">
@@ -440,7 +445,7 @@
 
               <source type="image/webp" media="(max-width: 767px)" srcset="img/photo/photo-promogirl-mobile@1x.webp, img/photo/photo-promogirl-mobile@2x.webp 2x">
 
-              <img src="img/photo/photo-promogirl-desktop@1x.jpg" srcset="img/photo/photo-promogirl-desktop@2x 2x"  alt="Спортивная девушка">
+              <img src="img/photo/photo-promogirl-desktop@1x.jpg" srcset="img/photo/photo-promogirl-desktop@2x.jpg 2x"  alt="Спортивная девушка">
             </picture>
           </div>
         </div>
@@ -466,7 +471,7 @@
       <div class="swiper-container  slider  slider--reviews">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-            <!-- Slides -->
+          <!-- Slides -->
           <div class="swiper-slide reviews-slide">
             <div class="reviews-block__client">
               <div class="reviews-block__img">
@@ -484,8 +489,8 @@
                 <img src="img/bg/bg-feedback-desktop@1x.png" alt="Фото Анна Орлова">
               </div>
               <div class="reviews-block__text">
-                <h3>Аноним</h3>
-                <p>«Хожу в SuperClub меньше дня. Всё плохо, в клубе грязно, тренажеры старые, персонал злой. И толпы вокруг.»</p>
+                <h3>Катя Перлова</h3>
+                <p>«Хожу в SuperClub уже 2 года. Нравится, что в клубе всегда чисто. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
             </div>
           </div>
@@ -497,12 +502,13 @@
     </div>
   </section>
 
+
   <section class="contacts-block">
     <div class="container contacts-block__post">
       <div class="contacts-block__cover">
         <div class="contacts-block__wrapper contacts-block__wrapper--form">
           <h2>Бесплатное занятие</h2>
-          <form class="contacts-block__lesson" method="post">
+          <form class="contacts-block__lesson"  method="post">
             <label class="visually-hidden" for="namefield">Имя</label>
             <input type="text" name="name" id="namefield" placeholder="Имя" required>
             <label class="visually-hidden" for="phonefield">Телефон</label>

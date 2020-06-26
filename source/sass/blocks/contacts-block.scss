@@ -15,6 +15,9 @@
 }
 
 .contacts-block__cover {
+  display: flex;
+  flex-direction: row;
+
   @media (max-width: $mobile-width) {
     background-color: $darkblue;
   }
@@ -176,6 +179,12 @@
     opacity: 1;
   }
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
   @media (max-width: $mobile-width) {
     display: block;
 
@@ -305,6 +314,12 @@
 
   color: $darkblue;
 
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
   @media (max-width: $tablet-width) {
     font-size: 18px;
     line-height: 152.34%;
@@ -321,6 +336,12 @@
   text-align: left;
 
   color: $darkblue;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    cursor: pointer;
+  }
 
   @media (max-width: $tablet-width) {
     font-size: 18px;

@@ -168,4 +168,10 @@
   text-transform: uppercase;
 
   color: $white;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 }

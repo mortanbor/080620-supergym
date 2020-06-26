@@ -1,7 +1,7 @@
 .page-header {
   position: relative;
   background-color: red;
-  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background: linear-gradient(49deg, rgba(0, 61, 133, 1) 0%, rgba(1, 1, 140, 1) 9%, rgba(184, 0, 39, 1) 61%);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -57,7 +57,9 @@
   &:hover,
   &:focus {
     cursor: pointer;
+    opacity: 0.5;
   }
+
 
   @media (max-width: $tablet-width) {
     font-size: 24px;

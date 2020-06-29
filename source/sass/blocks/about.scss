@@ -72,17 +72,20 @@
   position: absolute;
 
   top: 190px;
-  right: 265px;
+  right: 60.5%;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  box-sizing: border-box;
+
+  margin-right: 25px;
 
   color: $white;
 
   @media (max-width: $tablet-width) {
     top: 131px;
-    right: 210px;
+    right: 57.4%;
   }
 
   @media (max-width: $mobile-width) {

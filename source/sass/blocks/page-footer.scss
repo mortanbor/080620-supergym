@@ -7,16 +7,19 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 
   max-width: 1160px;
 
-  padding-top: 40px;
+  margin: 0 auto;
+  padding-top: 43px;
   padding-bottom: 39px;
 
   @media (max-width: $tablet-width) {
     max-width: 768px;
 
-    padding-top: 45px;
+    padding-top: 42px;
   }
 
   @media (max-width: $mobile-width) {
@@ -30,7 +33,6 @@
 }
 
 .page-footer__logo img {
-  max-width: 89px;
   width: 89px;
   height: 20px;
 
@@ -52,17 +54,25 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  box-sizing: border-box;
 
-  margin-right: 254px;
+  width: 68.62%;
+  margin-right: 21.64%;
+
+  @media (max-width: 1250px) {
+    margin-right: 16%;
+  }
 
   @media (max-width: $tablet-width) {
-    margin-right: 43px;
+    width: 78.61%;
+
+    margin-right: 6.34%;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     min-width: 290px;
     width: auto;
     height: 110px;
@@ -74,10 +84,14 @@
 .page-footer__item {
   @include default-style;
 
-  margin-right: 40px;
+  margin-right: 5%;
 
   &:first-child {
-    margin-right: 276px;
+    margin-right: 34.8%;
+
+    @media (max-width: 1250px) {
+      margin-right: 30%;
+    }
   }
 
   &:last-child {
@@ -91,10 +105,10 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 31px;
+    margin-right: 5.63%;
 
     &:first-child {
-      margin-right: 60px;
+      margin-right: 11.63%;
     }
   }
 

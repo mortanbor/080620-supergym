@@ -84,6 +84,7 @@
 
 .gym-block__room h3 {
   @include default-style;
+
   margin-bottom: 38px;
 
   font-family: $font-roboto;
@@ -94,6 +95,8 @@
   color: $darkblue;
 
   @media (max-width: $tablet-width) {
+    font-weight: normal;
+
     margin-bottom: 35px;
   }
 
@@ -170,6 +173,13 @@
   left: 38.6%;
 
   width: 364px;
+
+  @media (max-width: $tablet-width) {
+    width: 266px;
+
+    top: 76%;
+    left: 17.6%;
+  }
 }
 
 .gym-block__video {
@@ -183,7 +193,7 @@
   left: -87%;
 
   @media (max-width: $tablet-width) {
-    top: 69%;
+    top: 55%;
     left: 33%;
 
     width: 266px;
@@ -234,7 +244,9 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 73px;
-    height: 73px;
+    top: 47px;
+    left: 180px;
+
+    background-size: 73px 73px;
   }
 }

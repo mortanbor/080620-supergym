@@ -30,7 +30,7 @@
   @media (max-width: $tablet-width) {
     @include headtitle-tablet;
 
-    padding-bottom: 43px;
+    padding-bottom: 41px;
     text-align: center;
   }
 
@@ -207,7 +207,6 @@
 
   @media (max-width: $tablet-width) {
     width: 268px;
-    margin-right: 30px;
 
     &:hover,
     &:focus {

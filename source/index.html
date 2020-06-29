@@ -131,7 +131,8 @@
   </section>
 
   <section class="card-block" id="buycard">
-    <div class="container card-block__tickets">
+    <div class="container">
+      <div class="card-block__tickets">
       <h2>Абонементы</h2>
         <ul class="card-block__list">
           <li class="card-block__item">
@@ -182,6 +183,7 @@
           </ul>
         </div>
       </div>
+    </div>
   </section>
 
   <section class="games-block">
@@ -375,7 +377,7 @@
               <span class="advantage-block__number">900</span>
               <span class="advantage-block__unit">кв/м</span>
             </p>
-            <div class="advantage-block__about">
+            <div class="advantage-block__about advantage-block__about--square">
               <h3>Площадь</h3>
               <p>Занимайтесь без очередей и толпучки</p>
             </div>
@@ -427,7 +429,8 @@
   </section>
 
   <section class="action-block">
-    <div class="container action-block__wrapper">
+    <div class="container">
+      <div class="action-block__wrapper">
       <h2>Акции</h2>
       <div class="action-block__content">
         <div class="action-block__top">
@@ -462,6 +465,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -502,53 +506,53 @@
     </div>
   </section>
 
-
   <section class="contacts-block">
     <div class="container contacts-block__post">
-      <div class="contacts-block__cover">
-        <div class="contacts-block__wrapper contacts-block__wrapper--form">
-          <h2>Бесплатное занятие</h2>
-          <form class="contacts-block__lesson"  method="post">
-            <label class="visually-hidden" for="namefield">Имя</label>
-            <input type="text" name="name" id="namefield" placeholder="Имя" required>
-            <label class="visually-hidden" for="phonefield">Телефон</label>
-            <input type="tel" name="phone" id="phonefield" placeholder="Телефон" required>
-            <button class="button button--form" type="submit">Отправить</button>
-          </form>
-        </div>
-      </div>
-      <div class="contacts-block__wrapper contacts-block__wrapper--contacts">
-        <h2>Контакты</h2>
-        <div class="contacts-block__contact">
-          <div class="contacts-block__list">
-            <div class="contacts-block__column">
-              <div class="contacts-block__item">
-              <h3>Адрес:</h3>
-              <p>г. Омск, ул. 60 лет Октября, 7</p>
-            </div>
-              <div class="contacts-block__item contacts-block__item--bottom">
-              <h3>График работы:</h3>
-              <p>Пн-Вс: с 8:00 до 22:00</p>
-            </div>
-            </div>
-            <div class="contacts-block__column">
-              <div class="contacts-block__item">
-              <h3>Телефон:</h3>
-              <a class="contacts-block__phone" href="#">8-800-555-55-55</a>
-            </div>
-              <div class="contacts-block__item contacts-block__item--bottom">
-              <h3>Email:</h3>
-              <a class="contacts-block__email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-            </div>
+    <!-- <div class="contacts-block__cover"> -->
+      <div class="contacts-block__wrapper contacts-block__wrapper--form">
+        <h2>Бесплатное занятие</h2>
+        <form class="contacts-block__lesson"  method="post">
+          <label class="visually-hidden" for="namefield">Имя</label>
+          <input type="text" name="name" id="namefield" placeholder="Имя" required>
+          <label class="visually-hidden" for="phonefield">Телефон</label>
+          <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone" id="phonefield" placeholder="Телефон" required>
+          <button class="button button--form" type="submit">Отправить</button>
+        </form>
+      <!-- </div> -->
+    </div>
+    <div class="contacts-block__wrapper contacts-block__wrapper--contacts">
+      <h2>Контакты</h2>
+      <div class="contacts-block__contact">
+        <div class="contacts-block__list">
+          <div class="contacts-block__column">
+            <div class="contacts-block__item">
+            <h3>Адрес:</h3>
+            <p>г. Омск, ул. 60 лет Октября, 7</p>
+          </div>
+            <div class="contacts-block__item contacts-block__item--bottom">
+            <h3>График работы:</h3>
+            <p>Пн-Вс: с 8:00 до 22:00</p>
+          </div>
+          </div>
+          <div class="contacts-block__column">
+            <div class="contacts-block__item">
+            <h3>Телефон:</h3>
+            <a class="contacts-block__phone" href="#">8-800-555-55-55</a>
+          </div>
+            <div class="contacts-block__item contacts-block__item--bottom">
+            <h3>Email:</h3>
+            <a class="contacts-block__email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
           </div>
         </div>
       </div>
     </div>
-    </div>
-  </section>
+  </div>
+  </div>
+</section>
 
   <footer class="page-footer">
-    <div class="container page-footer__wrapper">
+    <div class="container">
+      <div class="page-footer__wrapper">
       <ul class="page-footer__list">
         <li class="page-footer__item">
           <a class="page-footer__logo" aria-label="Логотип Supergym">
@@ -595,6 +599,7 @@
           </li>
         </ul>
     </div>
+  </div>
   </footer>
   <script src="js/vendor/swiper.min.js"></script>
   <script src="js/script.js"></script>

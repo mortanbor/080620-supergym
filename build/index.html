@@ -147,60 +147,60 @@
   </section>
 
   <section class="card-block" id="buycard">
-    <div class="container">
-      <div class="card-block__tickets">
-      <h2>Абонементы</h2>
-        <ul class="card-block__list">
-          <li class="card-block__item">
-            <a href="#">1 месяц</a>
-          </li>
-          <li class="card-block__item">
-            <a href="#">6 месяцев</a>
-          </li>
-          <li class="card-block__item">
-            <a href="#">12 месяцев</a>
-          </li>
-        </ul>
-        <div class="card-block__wrapper choice-card">
-          <ul class="choice-card__list">
-            <li class="choice-card__item">
-              <a class="choice-card__link" href="#">
-                <h3>С тренером</h3>
-                <p class="choice-card__time">12 занятий</p>
-                <span class="choice-card__shadow">5000</span>
-                <p class="choice-card__prise">5000
-                  <span class="choice-card__code">&#x20bd;</span>
-                </p>
-                <span class="choice-button">Купить абонемент</span>
-              </a>
+      <div class="container">
+        <div class="card-block__tickets">
+        <h2>Абонементы</h2>
+          <ul class="card-block__list">
+            <li class="card-block__item">
+              <a class="card-block__link card-block__link--active" href="#">1 месяц</a>
             </li>
-            <li class="choice-card__item">
-              <a class="choice-card__link" href="#">
-                <h3>Дневной</h3>
-                <p class="choice-card__time">с 8:00 до 17:00</p>
-                <span class="choice-card__shadow">1700</span>
-                <p class="choice-card__prise">1700
-                  <span class="choice-card__code">&#x20bd;</span>
-                </p>
-                <span class="choice-button">Купить абонемент</span>
-              </a>
+            <li class="card-block__item">
+              <a class="card-block__link" href="#">6 месяцев</a>
             </li>
-            <li class="choice-card__item">
-              <a class="choice-card__link" href="#">
-                <h3>Полный день</h3>
-                <p class="choice-card__time">с 8:00 до 22:00</p>
-                <span class="choice-card__shadow">2700</span>
-                <p class="choice-card__prise">2700
-                  <span class="choice-card__code">&#x20bd;</span>
-                </p>
-                <span class="choice-button">Купить абонемент</span>
-              </a>
+            <li class="card-block__item">
+              <a class="card-block__link" href="#">12 месяцев</a>
             </li>
           </ul>
+          <div class="card-block__wrapper choice-card">
+            <ul class="choice-card__list choice-card__list--active">
+              <li class="choice-card__item">
+                <a class="choice-card__link" href="#">
+                  <h3>С тренером</h3>
+                  <p class="choice-card__time">12 занятий</p>
+                  <span class="choice-card__shadow">5000</span>
+                  <p class="choice-card__prise">5000
+                    <span class="choice-card__code">&#x20bd;</span>
+                  </p>
+                  <span class="choice-button">Купить абонемент</span>
+                </a>
+              </li>
+              <li class="choice-card__item">
+                <a class="choice-card__link" href="#">
+                  <h3>Дневной</h3>
+                  <p class="choice-card__time">с 8:00 до 17:00</p>
+                  <span class="choice-card__shadow">1700</span>
+                  <p class="choice-card__prise">1700
+                    <span class="choice-card__code">&#x20bd;</span>
+                  </p>
+                  <span class="choice-button">Купить абонемент</span>
+                </a>
+              </li>
+              <li class="choice-card__item">
+                <a class="choice-card__link" href="#">
+                  <h3>Полный день</h3>
+                  <p class="choice-card__time">с 8:00 до 22:00</p>
+                  <span class="choice-card__shadow">2700</span>
+                  <p class="choice-card__prise">2700
+                    <span class="choice-card__code">&#x20bd;</span>
+                  </p>
+                  <span class="choice-button">Купить абонемент</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <section class="games-block">
     <div class="container  games-block__wrapper">
@@ -523,26 +523,28 @@
   </section>
 
   <section class="contacts-block">
-    <div class="container contacts-block__post">
-    <!-- <div class="contacts-block__cover"> -->
-      <div class="contacts-block__wrapper contacts-block__wrapper--form">
-        <h2>Бесплатное занятие</h2>
-        <form class="contacts-block__lesson" method="post">
-          <label class="visually-hidden" for="namefield">Имя</label>
-          <input type="text" name="name" id="namefield" placeholder="Имя" required="">
-          <label class="visually-hidden" for="phonefield">Телефон</label>
-          <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone" id="phonefield" placeholder="Телефон" required="">
-          <button class="button button--form" type="submit">Отправить</button>
+    <div class="container">
+      <div class="contacts-block__post">
+      <div class="contacts-block__wrapform">
+        <div class="contacts-block__form">
+          <h2>Бесплатное занятие</h2>
+          <form class="contacts-block__lesson" method="post">
+            <label class="visually-hidden" for="namefield">Имя</label>
+            <input type="text" name="name" id="namefield" placeholder="Имя" required="">
+            <label class="visually-hidden" for="phonefield">Телефон</label>
+            <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone" id="phonefield" placeholder="Телефон" required="">
+           <button class="button button--form" type="submit">Отправить</button>
         </form>
-      <!-- </div> -->
+      </div>
     </div>
-    <div class="contacts-block__wrapper contacts-block__wrapper--contacts">
-      <h2>Контакты</h2>
-      <div class="contacts-block__contact">
-        <div class="contacts-block__list">
-          <div class="contacts-block__column">
-            <div class="contacts-block__item">
-            <h3>Адрес:</h3>
+    <div class="contacts-block__wrapcontact">
+      <div class="contacts-block__contacts">
+        <h2>Контакты</h2>
+        <div class="contacts-block__contact">
+          <div class="contacts-block__list">
+            <div class="contacts-block__column">
+              <div class="contacts-block__item">
+              <h3>Адрес:</h3>
             <p>г. Омск, ул. 60 лет Октября, 7</p>
           </div>
             <div class="contacts-block__item contacts-block__item--bottom">
@@ -561,10 +563,12 @@
           </div>
         </div>
       </div>
+        </div>
+      </div>
+     </div>
+   </div>
     </div>
-  </div>
-  </div>
-</section>
+  </section>
 
   <footer class="page-footer">
     <div class="container">
@@ -618,6 +622,8 @@
   </div>
   </footer>
   <script src="js/vendor/swiper.min.js"></script>
+  <script src="js/vendor/imask.min.js"></script>
+  <script src="js/vendor/smoothscroll.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

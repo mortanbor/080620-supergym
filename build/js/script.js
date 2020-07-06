@@ -35,13 +35,6 @@ var sliderReview = new Swiper('.slider--reviews', {
 });
 
 //Phone valid
-var phoneNumber = document.getElementById('phonefield');
-
-var phoneMask = IMask(phoneNumber, {
-    mask: '+{7}(000)000-00-00'
+IMask(document.querySelector('#phonefield'), {
+  mask: '+{7}(000)000-00-00',
 });
-//
-// var phoneValue =
-//   phoneNumber.addEventListener('keydown',function() {
-//   phoneNumber.value = phoneNumber.value.replace (/[^\+\d]/g, '');
-// });

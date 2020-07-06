@@ -12,23 +12,6 @@
 
   max-width: 1160px;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   z-index: -1;
-  //
-  //   bottom: -150px;
-  //   right: -8.75%;
-  //
-  //   width: 287px;
-  //   height: 494px;
-  //   background-image: url("../img/bg/bg-plate-desktop@1x.png");
-  //   background-color: transparent;
-  //   background-repeat: no-repeat;
-  //   background-position: left, bottom;
-  // }
-
-
   @media (max-width: $tablet-width) {
     flex-direction: column;
 
@@ -37,31 +20,12 @@
 
     padding: 0 12.32%;
     margin: 0;
-
-    // &::before {
-    //   content: "";
-    //
-    //   bottom: -125px;
-    //   right: 0;
-    //
-    //   width: 347px;
-    //   height: 444px;
-    //   background-image: url("../img/bg/bg-plate-tablet@1x.png");
-    // }
-
   }
 
   @media (max-width: $mobile-width) {
-    align-items: flex-start;
+    margin: auto;
     padding: 0;
-
-    // &::before {
-      bottom: 0;
-      width: 0;
-      height: 0;
-      background-image: none;
-    }
-  // }
+  }
 }
 
 .choice-card__item {
@@ -76,6 +40,13 @@
     width: 442px;
 
     margin-right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+
+    margin: auto;
+    padding: 0;
   }
 }
 

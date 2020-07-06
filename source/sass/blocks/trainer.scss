@@ -54,84 +54,17 @@
 
   margin: auto;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //
-  //   top: 45%;
-  //   left: -3%;
-  //
-  //   display: block;
-  //
-  //   width: 30px;
-  //   height: 30px;
-  //
-  //   border: solid #afafaf;
-  //   border-width: 0 1px 1px 0;
-  //
-  //   border-bottom: 1px solid #afafaf;
-  //   border-right: 1px solid #afafaf;
-  //
-  //   transform: rotate(-45deg);
-  //   transform: matrix(-0.55, -0.52, -0.52, 0.55, 0, 0);
-  // }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //
-  //   top: 45%;
-  //   right: -3%;
-  //
-  //   display: block;
-  //
-  //   width: 30px;
-  //   height: 30px;
-  //
-  //   border-top: 1px solid #afafaf;
-  //   border-left: 1px solid #afafaf;
-  //
-  //   transform: rotate(-45deg);
-  //   transform: matrix(-0.55, -0.52, -0.52, 0.55, 0, 0);
-  // }
-
   @media (max-width: $tablet-width) {
     justify-content: center;
 
     width: 83.48%;
-
-    // &::before {
-    //   top: 45%;
-    //   left: -55px;
-    // }
-
-    // &::after {
-    //   top: 45%;
-    //   right: -55px;
-    // }
   }
 
   @media (max-width: $mobile-width) {
     min-width: 226px;
-    width: 77.93%;
+    width: 70.6%;
 
     margin: 0 auto;
-
-    // &::before {
-    //   top: 47%;
-    //   left: -30px;
-    //
-    //   width: 16px;
-    //   height: 16px;
-    // }
-
-    // &::after {
-    //   top: 47%;
-    //   right: -30px;
-    //
-    //   width: 16px;
-    //   height: 16px;
-    // }
   }
 }
 

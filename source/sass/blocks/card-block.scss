@@ -1,5 +1,26 @@
 .card-block {
   background-color: $lightgrey;
+  background-image:
+    url("../img/bg/bg-plate-desktop@1x.png"),
+    linear-gradient(180deg, $lightgrey 89%, $white 11%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% 110%, 0 0;
+  background-size: auto, auto;
+
+  @media (max-width: $tablet-width) {
+    background-image:
+      url("../img/bg/bg-plate-tablet@1x.png"),
+      linear-gradient(180deg, $lightgrey 96.2%, $white 3.8%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% 104%, 0 0;
+    background-size: auto, auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image:
+    none,
+    linear-gradient(180deg, $lightgrey 100%, $white 0);
+  }
 }
 
 .card-block__tickets {
@@ -13,13 +34,13 @@
 
   margin: auto;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 225px;
 
   @media (max-width: $tablet-width) {
     width: 88.2%;
 
     padding-top: 100px;
-    padding-bottom: 58px;
+    padding-bottom: 130px;
   }
 
   @media (max-width: $mobile-width) {

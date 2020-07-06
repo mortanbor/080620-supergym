@@ -25,7 +25,7 @@
 
     margin: 0;
     padding-top: 70px;
-    padding-bottom: 277px;
+    padding-bottom: 70px;
   }
 }
 
@@ -52,6 +52,7 @@
   @media (max-width: $mobile-width) {
     align-items: flex-start;
 
+    margin: auto;
     padding: 0;
   }
 }
@@ -136,6 +137,8 @@
   }
 
   @media (max-width: $mobile-width) {
+    width: 260px;
+
     margin-bottom: 35px;
     padding-right: 30px;
 
@@ -145,6 +148,12 @@
 
 .gym-block__wrap {
   position: relative;
+}
+
+.gym-block__img {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .gym-block__img img {
@@ -180,6 +189,19 @@
     top: 76%;
     left: 17.6%;
   }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: auto;
+    height: 167px;
+
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 }
 
 .gym-block__video {
@@ -200,12 +222,22 @@
   }
 
   @media (max-width: $mobile-width) {
-    top: 83%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: none;
+    display: block;
     width: auto;
     height: 167px;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 
@@ -248,5 +280,10 @@
     left: 180px;
 
     background-size: 73px 73px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 45px;
+    left: 140px;
   }
 }

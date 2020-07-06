@@ -26,7 +26,7 @@
 
   @media (max-width: $mobile-width) {
     padding-top: 65px;
-    padding-bottom: 40px;
+    padding-bottom: 75px;
   }
 }
 
@@ -45,6 +45,8 @@
 
   @media (max-width: $mobile-width) {
     @include headtitle-mobile;
+
+    margin-bottom: 45px;
   }
 }
 
@@ -64,6 +66,15 @@
     width: auto;
 
     margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+
+    min-width: 290px;
+    width: 290px;
+
+    margin: auto;
   }
 }
 
@@ -89,6 +100,9 @@
 
   @media (max-width: $mobile-width) {
     display: block;
+
+    height: auto;
+
     margin-bottom: 30px;
   }
 }
@@ -121,6 +135,7 @@
     box-sizing: border-box;
     width: 290px;
 
+    padding-left:0;
     padding-bottom: 43px;
   }
 }
@@ -173,9 +188,15 @@
   }
 
   @media (max-width: $mobile-width) {
-    text-align: center;
+    width: auto;
 
-    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    text-align: center;
   }
 }
 
@@ -190,8 +211,10 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 290px;
-    height: 299px;
+    display: block;
+
+    width: 100%;
+    min-height: 299px;
   }
 }
 
@@ -265,6 +288,8 @@
 
   @media (max-width: $mobile-width) {
     display: block;
+
+    min-width: 290px;
   }
 }
 
@@ -310,10 +335,16 @@
 
   @media (max-width: $mobile-width) {
     display: block;
-    width: auto;
+    width: 290px;
 
     margin-bottom: 30px;
     padding-top: 30px;
+    padding-bottom: 35px;
+
+    &:first-child {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 }
 
@@ -328,6 +359,10 @@
 
   @media (max-width: $tablet-width) {
     line-height: 170%;
+  }
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
   }
 }
 
@@ -351,7 +386,19 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 28px;
+    display: block;
+
+    margin-bottom: 20px;
+    padding-right: 28px;
+    padding-left: 28px;
+
+    text-align: center;
+
+    &:first-child {
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+
   }
 }
 
